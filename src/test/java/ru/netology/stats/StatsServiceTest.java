@@ -7,10 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StatsServiceTest {
     @Test
-    public void total_saleTest () {
+    public void totalSaleTest() {
         StatsService service = new StatsService();
 
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long actual = service.sum(sales);
         long expected = 180;
@@ -19,10 +19,10 @@ class StatsServiceTest {
     }
 
     @Test
-    public void averageSalesAmountTest () {
+    public void averageSalesAmountTest() {
         StatsService service = new StatsService();
 
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long length = 12;
         long actual = service.averageSalesAmount(sales);
         long expected = 15;
@@ -31,10 +31,10 @@ class StatsServiceTest {
     }
 
     @Test
-    public void maxSalesTest () {
+    public void maxSalesTest() {
         StatsService service = new StatsService();
 
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long length = 12;
         long actual = service.maxSales(sales);
         long expected = 8;
@@ -43,10 +43,10 @@ class StatsServiceTest {
     }
 
     @Test
-    public void minSalesTest () {
+    public void minSalesTest() {
         StatsService service = new StatsService();
 
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long length = 12;
         long actual = service.minSales(sales);
         long expected = 9;
@@ -55,10 +55,10 @@ class StatsServiceTest {
     }
 
     @Test
-    public void numberOfMonthsOfSalesBelowAverageTest () {
+    public void numberOfMonthsOfSalesBelowAverageTest() {
         StatsService service = new StatsService();
 
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.numberOfMonthsOfSalesBelowAverage(sales);
         long expected = 5;
 
@@ -66,10 +66,10 @@ class StatsServiceTest {
     }
 
     @Test
-    public void numberOfMonthsOfSalesAboveAverageTest () {
+    public void numberOfMonthsOfSalesAboveAverageTest() {
         StatsService service = new StatsService();
 
-        long [] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.numberOfMonthsOfSalesAboveAverage(sales);
         long expected = 5;
 
